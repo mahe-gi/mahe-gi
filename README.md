@@ -6,26 +6,26 @@ I enjoy designing clean frontend experiences, building reliable backend systems,
 
 ## Tech
 
-**Frontend**
+**Frontend**  
 React.js • Next.js • TypeScript • Tailwind CSS
 
-**Backend**
+**Backend**  
 Node.js • Express.js • REST APIs • Prisma ORM • Auth.js
 
-**Database**
+**Database**  
 PostgreSQL • MySQL • MongoDB • Redis
 
-**Tools**
+**Tools**  
 Git • Docker • AWS • Linux • Postman
 
-## Projects
+## Featured Projects
 
 - **The Rental Circle** — Rental management platform
 - **Devloom** — Developer blogging platform
 
 ## Connect
 
-Portfolio:https://www.techwithmahe.com
-LinkedIn: https://linkedin.com/in/chmahesh01  
-GitHub: https://github.com/mahe-gi  
-Email: chmahesh.careers@gmail.com
+- **Portfolio:** https://www.techwithmahe.com
+- **LinkedIn:** https://linkedin.com/in/chmahesh01
+- **GitHub:** https://github.com/mahe-gi
+- **Email:** chmahesh.careers@gmail.com
