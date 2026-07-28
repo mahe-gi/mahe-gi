@@ -14,7 +14,7 @@ export function Certifications() {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {portfolio.certifications.map((cert, idx) => (
-            <div key={idx} className="bg-[#18181b] p-6 rounded-xl border border-zinc-800/50 hover:border-zinc-700 transition-colors flex items-start gap-4 group">
+            <div key={idx} className="bg-zinc-950/40 backdrop-blur-sm p-6 rounded-2xl border border-white/5 hover:border-white/10 hover:shadow-xl hover:shadow-purple-500/5 hover:-translate-y-1 transition-all duration-300 flex items-start gap-4 group">
               <div className="bg-purple-500/10 p-3 rounded-full group-hover:bg-purple-500/20 transition-colors">
                 <Award className="h-6 w-6 text-purple-400" />
               </div>

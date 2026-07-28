@@ -1,5 +1,7 @@
+"use client";
+
 import { portfolio } from "@/data/portfolio";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Terminal, Download, ArrowRight } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
@@ -17,8 +19,13 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           
           {/* Left Column: Text */}
-          <div className="flex flex-col space-y-8">
-            <div className="inline-flex items-center space-x-2 bg-zinc-900/50 border border-zinc-800 rounded-full px-4 py-1.5 w-fit">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="flex flex-col space-y-8"
+          >
+            <div className="inline-flex items-center space-x-2 bg-zinc-950/50 backdrop-blur-md border border-white/5 shadow-2xl rounded-full px-4 py-1.5 w-fit">
               <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
               <span className="text-sm font-medium text-zinc-300">
                 {portfolio.personal.status}
@@ -57,12 +64,17 @@ export function Hero() {
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column: Engineering Visualization */}
-          <div className="relative mx-auto w-full max-w-md lg:max-w-none">
-            <div className="rounded-xl border border-zinc-800 bg-[#09090b]/80 backdrop-blur shadow-2xl overflow-hidden">
-              <div className="flex items-center px-4 py-3 border-b border-zinc-800 bg-zinc-900/50">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+            className="relative mx-auto w-full max-w-md lg:max-w-none"
+          >
+            <div className="rounded-xl border border-white/5 bg-zinc-950/60 backdrop-blur-xl shadow-2xl overflow-hidden ring-1 ring-white/5">
+              <div className="flex items-center px-4 py-3 border-b border-white/5 bg-zinc-950/80">
                 <div className="flex space-x-2">
                   <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
                   <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
@@ -78,45 +90,46 @@ export function Hero() {
                   <span className="text-purple-400">const</span> developer = {"{"}
                 </div>
                 <div className="pl-4">
-                  name: <span className="text-green-400">"CH Mahesh"</span>,
+                  name: <span className="text-green-400">&quot;CH Mahesh&quot;</span>,
                 </div>
                 <div className="pl-4">
-                  role: <span className="text-green-400">"Full Stack Developer"</span>,
+                  role: <span className="text-green-400">&quot;Full Stack Developer&quot;</span>,
                 </div>
                 <div className="pl-4">
-                  experience: <span className="text-green-400">"1.5+ years"</span>,
+                  experience: <span className="text-green-400">&quot;1.5+ years&quot;</span>,
                 </div>
                 <div className="pl-4">
                   stack: [
                 </div>
                 <div className="pl-8">
-                  <span className="text-green-400">"React.js"</span>,
+                  <span className="text-green-400">&quot;React.js&quot;</span>,
                 </div>
                 <div className="pl-8">
-                  <span className="text-green-400">"Next.js"</span>,
+                  <span className="text-green-400">&quot;Next.js&quot;</span>,
                 </div>
                 <div className="pl-8">
-                  <span className="text-green-400">"Node.js"</span>,
+                  <span className="text-green-400">&quot;Node.js&quot;</span>,
                 </div>
                 <div className="pl-8">
-                  <span className="text-green-400">"TypeScript"</span>,
+                  <span className="text-green-400">&quot;TypeScript&quot;</span>,
                 </div>
                 <div className="pl-8">
-                  <span className="text-green-400">"PostgreSQL"</span>
+                  <span className="text-green-400">&quot;PostgreSQL&quot;</span>
                 </div>
                 <div className="pl-4">
                   ],
                 </div>
                 <div className="pl-4">
-                  focus: <span className="text-green-400">"Scalable SaaS Applications"</span>
+                  focus: <span className="text-green-400">&quot;Scalable SaaS Applications&quot;</span>
                 </div>
                 <div>{"};"}</div>
               </div>
             </div>
             
+            
             {/* Decorative Glow */}
-            <div className="absolute -inset-0.5 bg-gradient-to-tr from-blue-500/20 to-purple-500/20 rounded-xl blur -z-10 animate-pulse" />
-          </div>
+            <div className="absolute -inset-1 bg-gradient-to-tr from-blue-500/20 to-purple-500/20 rounded-xl blur-xl -z-10 animate-pulse" />
+          </motion.div>
 
         </div>
       </div>

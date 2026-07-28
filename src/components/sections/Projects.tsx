@@ -8,7 +8,7 @@ export function Projects() {
         <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-zinc-100">Selected Projects</h2>
           <p className="text-zinc-400 text-lg max-w-2xl">
-            A showcase of production-ready applications I've built, focusing on scalable architecture and solving real-world problems.
+            A showcase of production-ready applications I&apos;ve built, focusing on scalable architecture and solving real-world problems.
           </p>
         </div>
         

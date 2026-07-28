@@ -6,20 +6,20 @@ export function Experience() {
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-zinc-100">Experience</h2>
         
-        <div className="space-y-12 border-l-2 border-zinc-800 ml-4 md:ml-0 md:pl-0 md:border-none relative">
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-zinc-800 -translate-x-1/2" />
+        <div className="space-y-12 border-l border-zinc-800/50 ml-4 md:ml-0 md:pl-0 md:border-none relative">
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-zinc-800 to-transparent -translate-x-1/2" />
           
           {portfolio.experience.map((exp, idx) => (
             <div key={exp.id} className="relative pl-8 md:pl-0 group">
               {/* Timeline dot */}
-              <div className="absolute left-[-5px] md:left-1/2 md:-translate-x-1/2 top-2 h-3 w-3 rounded-full bg-blue-500 ring-4 ring-[#09090b] group-hover:ring-blue-500/20 transition-all z-10" />
+              <div className="absolute left-[-5px] md:left-1/2 md:-translate-x-1/2 top-6 h-2.5 w-2.5 rounded-full bg-blue-500 ring-4 ring-[#0a0a0a] group-hover:ring-blue-500/30 transition-all z-10" />
               
               <div className={`md:w-1/2 ${idx % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12 md:ml-auto'}`}>
-                <div className="bg-[#18181b] p-6 rounded-xl border border-zinc-800/50 hover:border-zinc-700 transition-colors">
-                  <div className={`flex flex-col ${idx % 2 === 0 ? 'md:items-end' : 'md:items-start'} mb-4`}>
-                    <span className="text-blue-400 font-mono text-sm mb-2">{exp.duration}</span>
-                    <h3 className="text-xl font-bold text-zinc-100">{exp.role}</h3>
-                    <span className="text-zinc-400 font-medium">{exp.company}</span>
+                <div className="bg-zinc-950/40 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-white/5 hover:border-white/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-300">
+                  <div className={`flex flex-col ${idx % 2 === 0 ? 'md:items-end' : 'md:items-start'} mb-6`}>
+                    <span className="text-blue-400/80 font-mono text-sm mb-2">{exp.duration}</span>
+                    <h3 className="text-xl md:text-2xl font-bold text-zinc-100 tracking-tight">{exp.role}</h3>
+                    <span className="text-zinc-500 font-medium">{exp.company}</span>
                   </div>
                   
                   <ul className={`text-sm text-zinc-400 space-y-2 ${idx % 2 === 0 ? 'md:text-right md:flex md:flex-col md:items-end' : ''}`}>

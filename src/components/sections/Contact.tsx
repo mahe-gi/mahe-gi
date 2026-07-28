@@ -1,7 +1,7 @@
 "use client";
 
 import { portfolio } from "@/data/portfolio";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Mail, Download } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
@@ -12,9 +12,9 @@ export function Contact() {
   return (
     <section id="contact" className="py-32 px-4 md:px-8 bg-zinc-900/30 border-t border-border/10">
       <div className="container mx-auto max-w-3xl text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-zinc-100">Let's build something together.</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-zinc-100">Let&apos;s build something together.</h2>
         <p className="text-xl text-zinc-400 mb-12 max-w-2xl mx-auto">
-          I'm currently open to Full Stack Developer opportunities. Feel free to connect for collaboration or opportunities.
+          I&apos;m currently open to Full Stack Developer opportunities. Feel free to connect for collaboration or opportunities.
         </p>
         
         <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">

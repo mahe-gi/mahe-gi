@@ -14,7 +14,7 @@ export function Education() {
         
         <div className="space-y-8">
           {portfolio.education.map((edu, idx) => (
-            <div key={idx} className="bg-[#18181b] p-6 rounded-xl border border-zinc-800/50 hover:border-zinc-700 transition-colors">
+            <div key={idx} className="bg-zinc-950/40 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-white/5 hover:border-white/10 hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
                   <h3 className="text-xl font-bold text-zinc-100">{edu.degree}</h3>

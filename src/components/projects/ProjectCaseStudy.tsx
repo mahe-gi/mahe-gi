@@ -1,9 +1,9 @@
 import { Project } from "@/types/project";
 import { Architecture } from "./Architecture";
 import { DecisionCard } from "./DecisionCard";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, ArrowLeft, Image as ImageIcon } from "lucide-react";
+import { ExternalLink, ArrowLeft, Image as ImageIcon, AlertTriangle, CheckCircle2 } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
@@ -40,7 +40,8 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
       </div>
 
       {project.image && (
-        <div className="mb-16 rounded-2xl overflow-hidden border border-border/50 bg-zinc-900/50 shadow-2xl">
+        <div className="mb-16 rounded-2xl overflow-hidden border border-white/10 bg-zinc-950/50 shadow-2xl">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
             src={project.image} 
             alt={`${project.title} Preview`} 
@@ -50,7 +51,7 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
       )}
       
       {!project.image && (
-        <div className="mb-16 h-64 sm:h-96 rounded-2xl border border-dashed border-zinc-800 bg-zinc-900/30 flex items-center justify-center flex-col text-zinc-600">
+        <div className="mb-16 h-64 sm:h-96 rounded-2xl border border-dashed border-zinc-800 bg-zinc-950/30 flex items-center justify-center flex-col text-zinc-600">
           <ImageIcon className="h-12 w-12 mb-4 opacity-50" />
           <p className="font-medium text-sm">Add a screenshot of {project.title} here</p>
         </div>
@@ -72,13 +73,13 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
       <div className="grid md:grid-cols-2 gap-12 mb-16">
         <section>
           <h2 className="text-2xl font-bold mb-4 text-zinc-100">The Problem</h2>
-          <p className="text-zinc-400 leading-relaxed">
+          <p className="text-zinc-400 leading-relaxed max-w-prose">
             {project.problem}
           </p>
         </section>
         <section>
           <h2 className="text-2xl font-bold mb-4 text-zinc-100">The Solution</h2>
-          <p className="text-zinc-400 leading-relaxed">
+          <p className="text-zinc-400 leading-relaxed max-w-prose">
             {project.solution}
           </p>
         </section>
@@ -119,10 +120,10 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
       <div className="grid md:grid-cols-2 gap-12 mb-16">
         <section>
           <h2 className="text-2xl font-bold mb-4 text-zinc-100">Challenges</h2>
-          <ul className="space-y-3">
+          <ul className="space-y-4">
             {project.challenges.map((challenge, i) => (
               <li key={i} className="flex items-start text-zinc-400 leading-relaxed">
-                <span className="flex-shrink-0 text-red-400 mr-3">✗</span>
+                <AlertTriangle className="flex-shrink-0 text-amber-500/80 mr-3 h-5 w-5 mt-0.5" />
                 <span>{challenge}</span>
               </li>
             ))}
@@ -130,10 +131,10 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
         </section>
         <section>
           <h2 className="text-2xl font-bold mb-4 text-zinc-100">Lessons Learned</h2>
-          <ul className="space-y-3">
+          <ul className="space-y-4">
             {project.lessonsLearned.map((lesson, i) => (
               <li key={i} className="flex items-start text-zinc-400 leading-relaxed">
-                <span className="flex-shrink-0 text-green-400 mr-3">✓</span>
+                <CheckCircle2 className="flex-shrink-0 text-emerald-500/80 mr-3 h-5 w-5 mt-0.5" />
                 <span>{lesson}</span>
               </li>
             ))}

@@ -25,7 +25,7 @@ export function Skills() {
           {portfolio.skills.map((category) => (
             <div 
               key={category.title} 
-              className="bg-[#18181b] p-8 rounded-2xl border border-zinc-800/50 hover:border-zinc-700 transition-colors group"
+              className="bg-zinc-950/40 backdrop-blur-sm p-8 rounded-2xl border border-white/5 hover:border-white/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-300 group"
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-3 bg-zinc-900 rounded-lg group-hover:scale-110 transition-transform">
@@ -39,7 +39,7 @@ export function Skills() {
                   <Badge 
                     key={skill} 
                     variant="outline" 
-                    className="text-sm py-1.5 px-3 bg-zinc-900/50 border-zinc-800 text-zinc-300 hover:text-zinc-100 hover:border-zinc-600 transition-colors"
+                    className="text-sm py-1.5 px-3 bg-white/5 border-white/5 text-zinc-300 hover:text-white hover:bg-white/10 transition-colors font-normal"
                   >
                     {skill}
                   </Badge>
