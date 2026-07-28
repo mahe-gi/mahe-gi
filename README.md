@@ -1,22 +1,31 @@
 # CH Mahesh
 
-Full Stack Developer building scalable web applications with React, Next.js, Node.js, TypeScript, and PostgreSQL.
+Full Stack Developer focused on building scalable SaaS applications and production-ready web platforms.
 
-## Tech Stack
+I enjoy designing clean frontend experiences, building reliable backend systems, and turning ideas into maintainable software.
 
-- **Frontend:** React.js, Next.js, TypeScript, Tailwind CSS
-- **Backend:** Node.js, Express.js, REST APIs, Prisma ORM
-- **Database:** PostgreSQL, MySQL, MongoDB, Redis
-- **Tools:** Git, Docker, AWS, Postman
+## Tech
 
-## Featured Projects
+**Frontend**
+React.js • Next.js • TypeScript • Tailwind CSS
 
-- **The Rental Circle** — Full-stack rental management platform
+**Backend**
+Node.js • Express.js • REST APIs • Prisma ORM • Auth.js
+
+**Database**
+PostgreSQL • MySQL • MongoDB • Redis
+
+**Tools**
+Git • Docker • AWS • Linux • Postman
+
+## Projects
+
+- **The Rental Circle** — Rental management platform
 - **Devloom** — Developer blogging platform
 
 ## Connect
 
-- Portfolio: https://your-portfolio.vercel.app
-- LinkedIn: https://linkedin.com/in/chmahesh01
-- GitHub: https://github.com/mahe-gi
-- Email: chmahesh.careers@gmail.com
+Portfolio: [https://your-portfolio.vercel.app  ](https://www.techwithmahe.com/)
+LinkedIn: https://linkedin.com/in/chmahesh01  
+GitHub: https://github.com/mahe-gi  
+Email: chmahesh.careers@gmail.com
