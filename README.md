@@ -25,7 +25,7 @@ Git • Docker • AWS • Linux • Postman
 
 ## Connect
 
-Portfolio: [https://your-portfolio.vercel.app  ](https://www.techwithmahe.com/)
+Portfolio:https://www.techwithmahe.com
 LinkedIn: https://linkedin.com/in/chmahesh01  
 GitHub: https://github.com/mahe-gi  
 Email: chmahesh.careers@gmail.com
